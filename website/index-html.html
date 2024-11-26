@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #ecf0f1;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .dashboard {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            width: 300px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .features {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem 0;
+            background-color: white;
+        }
+
+        .features h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            flex-basis: 250px;
+            padding: 1rem;
+        }
+
+        .feature i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Inventory Management System</h1>
+            <p>Streamline Your Inventory Tracking and Management</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="card">
+                <h2>Search Inventory</h2>
+                <p>Quickly find and view your current inventory items with our intuitive search functionality.</p>
+                <a href="search-html.html" class="btn">Search Now</a>
+            </div>
+            <div class="card">
+                <h2>Add New Items</h2>
+                <p>Easily add new products to your inventory with just a few clicks.</p>
+                <a href="add-html.html" class="btn">Add Item</a>
+            </div>
+        </div>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <i class="fas fa-search"></i>
+                    <h3>Real-Time Search</h3>
+                    <p>Instantly locate items across your entire inventory.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-plus-circle"></i>
+                    <h3>Quick Item Addition</h3>
+                    <p>Add new items with comprehensive tracking details.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Inventory Insights</h3>
+                    <p>Gain valuable insights into your stock levels and trends.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Inventory Management System. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
