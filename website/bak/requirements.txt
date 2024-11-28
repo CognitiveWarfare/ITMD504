@@ -1,0 +1,6 @@
+php >= 7.4.0
+mysql >= 5.7
+apache2 >= 2.4
+php-mysql
+php-json
+php-curl
