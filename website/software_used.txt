@@ -1,0 +1,3 @@
+I used PHP for my back-end code to interact with my mysql database. 
+I tested it by running it on my local VM and making sure all fields worked properly,
+I then created an azure VM and built a website in the cloud. 
